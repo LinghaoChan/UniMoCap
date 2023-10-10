@@ -259,21 +259,22 @@ def save_csv(babel_json, mode):
 
 
 if __name__ == "__main__":
+    """
+    This script processes BABEL dataset annotations and converts them into CSV files
+    in a specific format, suitable for further analysis and use in machine learning tasks.
 
-    # This script processes BABEL dataset annotations and converts them into CSV files
-    # in a specific format, suitable for further analysis and use in machine learning tasks.
+    The script performs the following main steps:
+    1. It defines paths to the AMASS and BABEL datasets and specifies processing modes,
+       which supports 'all', 'seg', and 'seq' modes.
+    2. For each processing mode, it calls the "process_babel" function to process BABEL
+       dataset annotations, obtaining JSON annotations.
+    3. It then calls the "save_csv" function to save the processed annotations into CSV files.
+    4. The generated CSV files are named based on the processing mode, making it easy to
+       differentiate between different types of annotations.
 
-    # The script performs the following main steps:
-    # 1. It defines paths to the AMASS and BABEL datasets and specifies processing modes,
-    #    which supports 'all', 'seg', and 'seq' modes.
-    # 2. For each processing mode, it calls the "process_babel" function to process BABEL
-    #    dataset annotations, obtaining JSON annotations.
-    # 3. It then calls the "save_csv" function to save the processed annotations into CSV files.
-    # 4. The generated CSV files are named based on the processing mode, making it easy to
-    #    differentiate between different types of annotations.
-
-    # Overall, this script provides a convenient way to preprocess and organize BABEL dataset
-    # annotations for downstream tasks and analysis.
+    Overall, this script provides a convenient way to preprocess and organize BABEL dataset
+    annotations for downstream tasks and analysis.
+    """
 
     # Define the paths to the AMASS and BABEL datasets
     amass_path = "datasets/amass_data/"
