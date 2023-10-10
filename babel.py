@@ -165,6 +165,7 @@ def process_babel(amass_path: str, babel_path: str, mode: str = "all", outputs: 
     # Save the processed annotations as a JSON file
     save_dict_json(dico, save_json_index_path)
     print(f"Saving the annotations to {save_json_index_path}")
+    
     # Return the processed annotations dictionary for saving csv file
     return dico
 
@@ -210,7 +211,7 @@ def save_csv(babel_json, mode):
     # Iterate through BABEL JSON data
     for keyid, dico in tqdm(babel_json.items()):
         # Build the path to the source data file
-        source_path_file = ".datasets/HumanML3D/pose_data/" + \
+        source_path_file = "./datasets/HumanML3D/pose_data/" + \
             dico["path"] + ".npy"
         # Extract annotations from the BABEL JSON
         meta_annotation = dico["annotations"]
@@ -271,9 +272,6 @@ if __name__ == "__main__":
     3. It then calls the "save_csv" function to save the processed annotations into CSV files.
     4. The generated CSV files are named based on the processing mode, making it easy to
        differentiate between different types of annotations.
-
-    Overall, this script provides a convenient way to preprocess and organize BABEL dataset
-    annotations for downstream tasks and analysis.
     """
 
     # Define the paths to the AMASS and BABEL datasets
