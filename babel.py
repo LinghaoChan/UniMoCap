@@ -5,7 +5,7 @@
 # and cite them accordingly.
 # If the unifier is used in your research, please consider to cite as:
 # 
-# @article{LingHaoChenUniMocap,
+# @article{chen2023unimocap,
 #   title={UniMocap: Unifier for BABEL, HumanML3D, and KIT},
 #   author={Chen, Ling-Hao and UniMocap, Contributor},
 #   journal={https://github.com/LinghaoChan/UniMoCap},
@@ -140,6 +140,7 @@ def process_babel(amass_path: str, babel_path: str, mode: str = "all", outputs: 
                     "type": "seq"
                 }
                 annotations.append(element)
+            
         # Process segment-level annotations if the mode is "seg" or "all"
         if mode in ["seg", "all"]:
             if not ((labels := babel_ann["frame_ann"]) and (labels := labels["labels"])):
