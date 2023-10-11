@@ -1,5 +1,5 @@
 # coding=utf-8
-# Copyright (c) 2023 Ling-Hao CHEN (https://lhchen.top) from Tsinghua University.
+# Copyright 2023 Ling-Hao CHEN (https://lhchen.top) from Tsinghua University.
 #
 # For all the datasets, be sure to read and follow their license agreements,
 # and cite them accordingly.
