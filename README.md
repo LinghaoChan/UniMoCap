@@ -11,7 +11,7 @@ In this repository, we unify the AMASS-based text2motion datatsets (HumanML3D, B
 
 **We believe this repository will be useful for training models on larger mocap text-motion data.**
 
-We make the data processing as simple as possible. For those who are not familiar with the datasets, we will provide a video tutorial to tell you how to do it in the following weeks. For the Chinese community, we provide a Chinese document for users. If you have any question, please contact at Ling-Hao CHEN (thu [DOT] lhchen [AT] gamil [DOT] com).
+We make the data processing as simple as possible. For those who are not familiar with the datasets, we will provide a video tutorial to tell you how to do it in the following weeks. For the Chinese community, we provide a Chinese document for users. 
 
 
 # 🏃🏼 TODO List
@@ -20,6 +20,7 @@ We make the data processing as simple as possible. For those who are not familia
 - [ ] Provide a tutorial video.
 - [ ] Support more language documents.
 - [ ] Support SMPL-X motion representation calculation (expected in a week).
+- [ ] Provide trained models based on UniMoCap.
 
 # 🛠️ Installation
 
@@ -190,9 +191,13 @@ If you would like to get body-only motions, please refer to [Body-only data prep
 If you would like to get whole-body motions, please refer to [Whole-body motion processing](./resource/docs/en-wholebody.md).
 
 
-# 💖 Opening for Community Contributions
+## 💖 Opening for Community Contributions
 
 We sincerely wish the community to support more text-motion mocap datasets. 
+
+## 🌹 Acknowledgement
+
+Our code is modified on the basis of [TMR](https://github.com/Mathux/TMR), [AMASS-Annotation-Unifier](https://github.com/Mathux/AMASS-Annotation-Unifier), and [HumanML3D](https://github.com/EricGuo5513/HumanML3D), thanks to all contributors!
 
 # 🤝🏼 Citation
 
@@ -236,3 +241,4 @@ If you use the Motion-X dataset, please cite it accordingly.
   year={2023}
 }
 ```
+If you have any question, please contact at Ling-Hao CHEN (thu [DOT] lhchen [AT] gamil [DOT] com).
