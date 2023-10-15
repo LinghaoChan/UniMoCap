@@ -2,7 +2,9 @@
 
 [中文文档]() ｜ [Tutorial Video (coming soon)]() 
 
-In this repo, we unify the AMASS-based text2motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
+# What is UniMoCap?
+
+In this repository, we unify the AMASS-based text2motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
 
 - [x] body-only H3D-format (263-dim, 24 joints)
 - [x] whole-body SMPL-X-format (SMPL-X parameters). 
@@ -20,9 +22,9 @@ The difference between body-only and whole-body data preprocessing only exists i
 - [ ] Support more language documents.
 - [ ] Support SMPL-X motion representation calculation (expected in a week).
 
+# How to use?
 
-
-# 1. Data Preparing
+## 1. Data Preparing
 
 
 <details>
@@ -129,7 +131,7 @@ Download the [BABEL](https://teach.is.tue.mpg.de/download.php) annotations fro
 </details> 
     
 
-# 2. Generate mapping files and text files
+## 2. Generate mapping files and text files
 
 In this step, we will get mapping files (`.csv`) and text files (`./{dataset}_new_text`). 
 
@@ -165,7 +167,7 @@ python kitml.py
 ```
 </details> 
 
-# 3. Extract and Process Data
+## 3. Extract and Process Data
 
 In this step, we follow the method in [HumanML3D](https://github.com/EricGuo5513/HumanML3D) to extract motion feature.  
 
@@ -181,3 +183,47 @@ cp -r ./datasets/HumanML3D/paramUtil.py ./
 If you would like to get body-only motions, please refer to [Body-only data preprocessing](./resource/docs/en-bodyonly.md).
 
 If you would like to get whole-body motions, please refer to [Whole-body motion processing](./resource/docs/en-wholebody.md).
+
+
+# Citation
+
+If you use this repository for research, you need to cite: 
+```bash
+@article{chen2023unimocap,
+  title={UniMocap: Unifier for BABEL, HumanML3D, and KIT},
+  author={Chen, Ling-Hao and UniMocap, Contributors},
+  journal={https://github.com/LinghaoChan/UniMoCap},
+  year={2023}
+}
+```
+As some components of UniMoCap are borrowed from [AMASS-Annotation-Unifier](https://github.com/Mathux/AMASS-Annotation-Unifier) and [HumanML3D](https://github.com/EricGuo5513/HumanML3D). You need to cite them accordingly.
+
+```bash
+@inproceedings{petrovich23tmr,
+    title     = {{TMR}: Text-to-Motion Retrieval Using Contrastive {3D} Human Motion Synthesis},
+    author    = {Petrovich, Mathis and Black, Michael J. and Varol, G{\"u}l},
+    booktitle = {International Conference on Computer Vision ({ICCV})},
+    year      = {2023}
+}
+```
+
+```bash
+@InProceedings{Guo_2022_CVPR,
+    author    = {Guo, Chuan and Zou, Shihao and Zuo, Xinxin and Wang, Sen and Ji, Wei and Li, Xingyu and Cheng, Li},
+    title     = {Generating Diverse and Natural 3D Human Motions From Text},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {5152-5161}
+}
+```
+
+If you use the Motion-X dataset, please cite it accordingly.
+```bash
+@article{lin2023motionx,
+  title={Motion-X: A Large-scale 3D Expressive Whole-body Human Motion Dataset},
+  author={Lin, Jing and Zeng, Ailing and Lu, Shunlin and Cai, Yuanhao and Zhang, Ruimao and Wang, Haoqian and Zhang, Lei},
+  journal={Advances in Neural Information Processing Systems},
+  year={2023}
+}
+```
