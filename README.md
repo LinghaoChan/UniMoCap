@@ -2,7 +2,7 @@
 
 [中文文档]() ｜ [Tutorial Video (coming soon)]() 
 
-# What is UniMoCap?
+# ❓ What is UniMoCap?
 
 In this repository, we unify the AMASS-based text2motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
 
@@ -14,20 +14,20 @@ In this repository, we unify the AMASS-based text2motion datatsets (HumanML3D, B
 We make the data processing as simple as possible. For those who are not familiar with the datasets, we will provide a video tutorial to tell you how to do it in the following weeks. For the Chinese community, we provide a Chinese document for users. If you have any question, please contact at Ling-Hao CHEN (thu [DOT] lhchen [AT] gamil [DOT] com).
 
 
-# TODO List
+# 🏃🏼 TODO List
 
 - [ ] Support `seg` only and `seq` only BABEL unifier.
 - [ ] Provide a tutorial video.
 - [ ] Support more language documents.
 - [ ] Support SMPL-X motion representation calculation (expected in a week).
 
-# Installation
+# 🛠️ Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-# How to use?
+# 🚀 How to use?
 
 ## 1. Data Preparing
 
@@ -190,7 +190,11 @@ If you would like to get body-only motions, please refer to [Body-only data prep
 If you would like to get whole-body motions, please refer to [Whole-body motion processing](./resource/docs/en-wholebody.md).
 
 
-# Citation
+# 💖 Opening for Community Contributions
+
+We sincerely wish the community to support more text-motion mocap datasets. 
+
+# 🤝🏼 Citation
 
 If you use this repository for research, you need to cite: 
 ```bash
