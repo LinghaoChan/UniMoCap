@@ -173,6 +173,15 @@
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
+   10. UniMoCap does not claim copyright on the individual sub-datasets 
+      or AMASS. UniMoCap only claims copyright on the code. However, it 
+      should be noted that UniMoCap uses codes from other open source 
+      projects. We do not claim the copyright to this part of the code, 
+      and users need to abide by the LICENSE of the corresponding code. 
+      This has been documented in the specific python documentation. If you 
+      use this project for academic research, you need to carefully cite the 
+      code libraries and papers involved in the project.
+
    END OF TERMS AND CONDITIONS
 
    APPENDIX: How to apply the Apache License to your work.
@@ -186,7 +195,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright 2023 Ling-Hao CHEN (https://lhchen.top) from Tsinghua University.
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
