@@ -49,7 +49,7 @@ In whole-body data processing operation,
         ```
         
     
-    OK! After all these processing, we will get the H3D-format UniMocap dataset following the structure like: 
+    OK! After all these processing, we will get the SMPL-X-format UniMocap dataset following the structure like: 
     
     ```bash
     ./body-only-unimocap/UniMocap

@@ -49,7 +49,7 @@
         ```
         
     
-    OK！经过所有这些处理，我们将得到符合H3D格式的UniMocap数据集，其结构如下：
+    OK！经过所有这些处理，我们将得到SMPL-X格式的UniMocap数据集，其结构如下：
     
     ```bash
     ./body-only-unimocap/UniMocap
