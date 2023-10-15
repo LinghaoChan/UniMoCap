@@ -22,9 +22,20 @@ sdist/
 var/
 wheels/
 share/python-wheels/
+common/
+human_body_prior/
+paramUtil.py
+whole-body-motion/
+body-only-unimocap/
+*text*/
+body_models/
+datasets/
 *.egg-info/
 .installed.cfg
 *.egg
+*.out
+*.sh
+*.csv
 MANIFEST
 
 # PyInstaller
