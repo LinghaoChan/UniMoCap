@@ -7,7 +7,7 @@
 #
 # @article{chen2023unimocap,
 #   title={UniMocap: Unifier for BABEL, HumanML3D, and KIT},
-#   author={Chen, Ling-Hao and UniMocap, Contributor},
+#   author={Chen, Ling-Hao and UniMocap, Contributors},
 #   journal={https://github.com/LinghaoChan/UniMoCap},
 #   year={2023}
 # }
@@ -29,8 +29,8 @@
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
-# limitations under the License.
-
+# limitations under the License. We provide a license to use the code, 
+# please read the specific details carefully.
 import os
 
 import pandas as pd

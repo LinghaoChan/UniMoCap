@@ -6,7 +6,7 @@
 # If the unifier is used in your research, please consider to cite as:
 #
 # @article{chen2023unimocap,
-#   title={UniMocap: Unifier for BABEL, HumanML3D, and KIT},
+#   title={UniMoCap: Unifier for BABEL, HumanML3D, and KIT},
 #   author={Chen, Ling-Hao and UniMocap, Contributor},
 #   journal={https://github.com/LinghaoChan/UniMoCap},
 #   year={2023}

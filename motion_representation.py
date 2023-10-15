@@ -7,7 +7,7 @@
 #
 # @article{chen2023unimocap,
 #   title={UniMocap: Unifier for BABEL, HumanML3D, and KIT},
-#   author={Chen, Ling-Hao and UniMocap, Contributor},
+#   author={Chen, Ling-Hao and UniMocap, Contributors},
 #   journal={https://github.com/LinghaoChan/UniMoCap},
 #   year={2023}
 # }
@@ -31,10 +31,11 @@
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
-# limitations under the License.
+# limitations under the License. We provide a license to use the code, 
+# please read the specific details carefully.
 #
 # ------------------------------------------------------------------------------------------------
-# Copyright (c) Chuan GUO.
+# Copyright (c) Chuan Guo.
 # ------------------------------------------------------------------------------------------------
 # Portions of this code were adapted from the following open-source project:
 # https://github.com/EricGuo5513/HumanML3D
@@ -462,9 +463,9 @@ if __name__ == "__main__":
     source_list = os.listdir(data_dir)
     frame_num = 0
     for source_file in tqdm(source_list):
-        source_data = np.load(os.path.join(data_dir, source_file))[
-            :, :joints_num]
         try:
+            source_data = np.load(os.path.join(data_dir, source_file))[
+                :, :joints_num]
             data, ground_positions, positions, l_velocity = process_file(
                 source_data, 0.002)
             rec_ric_data = recover_from_ric(torch.from_numpy(

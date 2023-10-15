@@ -30,6 +30,8 @@ body-only-unimocap/
 *text*/
 body_models/
 datasets/
+body_models
+datasets
 *.egg-info/
 .installed.cfg
 *.egg
