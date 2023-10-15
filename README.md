@@ -13,7 +13,6 @@ In this repository, we unify the AMASS-based text2motion datatsets (HumanML3D, B
 
 We make the data processing as simple as possible. For those who are not familiar with the datasets, we will provide a video tutorial to tell you how to do it in the following weeks. For the Chinese community, we provide a Chinese document for users. If you have any question, please contact at Ling-Hao CHEN (thu [DOT] lhchen [AT] gamil [DOT] com).
 
-The difference between body-only and whole-body data preprocessing only exists in the step 2 (Extract and Process Data). Steps before that are the same. 
 
 # TODO List
 
@@ -21,6 +20,12 @@ The difference between body-only and whole-body data preprocessing only exists i
 - [ ] Provide a tutorial video.
 - [ ] Support more language documents.
 - [ ] Support SMPL-X motion representation calculation (expected in a week).
+
+# Installation
+
+```bash
+pip install -r requirements.txt
+```
 
 # How to use?
 
