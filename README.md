@@ -19,6 +19,7 @@ We make the data processing as simple as possible. For those who are not familia
 - [ ] Support `seg` only and `seq` only BABEL unifier.
 - [ ] Provide a tutorial video.
 - [ ] Support more language documents.
+- [ ] Support more T-M datasets (e.g.: FLAG3D, STDM). Welcome to support your own dataset here! 
 - [ ] Support SMPL-X motion representation calculation (expected in a week).
 - [ ] Provide trained models based on UniMoCap.
 
