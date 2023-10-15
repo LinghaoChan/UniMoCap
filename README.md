@@ -1,6 +1,6 @@
 ![unimocap logo.png](./resource/imgs/logo.png)
 
-[中文文档]() ｜ [Tutorial Video (coming soon)]() 
+[中文文档](./resource/docs/cn-README.md) ｜ [Tutorial Video (coming soon)]() 
 
 # ❓ What is UniMoCap?
 
