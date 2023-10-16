@@ -4,7 +4,7 @@
 
 # ❓ What is UniMoCap?
 
-In this repository, we unify the AMASS-based text2motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
+UniMoCap is a community implementation to unify the text-motion mocap datasets. In this repository, we unify the AMASS-based text-motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
 
 - [x] body-only H3D-format (263-dim, 24 joints)
 - [x] whole-body SMPL-X-format (SMPL-X parameters). 
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 <details>
 <summary>Download SMPL+H and DMPLs.</summary>
 
-Download SMPL+H mode from [SMPL+H](https://mano.is.tue.mpg.de/download.php) (choose Extended SMPL+H model used in AMASS project) and DMPL model from [DMPL](https://smpl.is.tue.mpg.de/download.php) (choose DMPLs compatible with SMPL). Then place all the models under `./body_model/`. The `./body_model/` folder tree should be:
+Download SMPL+H mode from [SMPL+H](https://mano.is.tue.mpg.de/download.php) (choose Extended SMPL+H model used in AMASS project), DMPL model from [DMPL](https://smpl.is.tue.mpg.de/download.php) (choose DMPLs compatible with SMPL), and SMPL-X model from [SMPL-X](https://smpl-x.is.tue.mpg.de/download.php). Then place all the models under `./body_model/`. The `./body_model/` folder tree should be:
 
 ```bash
 ./body_models
@@ -165,7 +165,7 @@ python babel.py
 </details> 
     
 <details>
-<summary>KIL-ML Dataset</summary>
+<summary>KIT-ML Dataset</summary>
     
 We provide the code to generate unified KIT-ML annotation. Both `.json` (`./outputs-json/kitml.json`) file and `.csv` file (`kitml_h3dformat.csv`) are generated. You can generate related files with the following command. The `.json` file is only an intermediate generated file and will not be used in subsequent processing.
 
@@ -230,6 +230,34 @@ As some components of UniMoCap are borrowed from [AMASS-Annotation-Unifier](http
     month     = {June},
     year      = {2022},
     pages     = {5152-5161}
+}
+```
+
+If you use the dataset, you need to cite subset AMASS and KIT-ML.
+
+```bash
+@article{Plappert2016,
+    author = {Matthias Plappert and Christian Mandery and Tamim Asfour},
+    title = {The {KIT} Motion-Language Dataset},
+    journal = {Big Data}
+    publisher = {Mary Ann Liebert Inc},
+    year = {2016},
+    month = {dec},
+    volume = {4},
+    number = {4},
+    pages = {236--252}
+}
+```
+
+```bash
+@conference{AMASS2019,
+  title = {AMASS: Archive of Motion Capture as Surface Shapes},
+  author = {Mahmood, Naureen and Ghorbani, Nima and Troje, Nikolaus F. and Pons-Moll, Gerard and Black, Michael J.},
+  booktitle = {International Conference on Computer Vision},
+  pages = {5442--5451},
+  month = oct,
+  year = {2019},
+  month_numeric = {10}
 }
 ```
 

@@ -4,14 +4,14 @@
 
 # ❓ 什么是UniMoCap？
 
-在这个仓库中，我们统一了基于AMASS的文本到动作数据集（HumanML3D、BABEL和KIT-ML）。我们支持处理AMASS数据的两种格式：
+UniMoCap是用于统一文本-动作动捕数据集的社区实现。在这个仓库中，我们统一了基于AMASS的文本-动作数据集（HumanML3D、BABEL和KIT-ML）。我们支持处理AMASS数据的两种格式：
 
 - [x]  仅身体的H3D格式（263维，24个关节）
 - [x]  全身的的SMPL-X格式（SMPL-X参数）。
 
 **我们相信这个仓库对于在更大的动作文本数据上训练模型将会非常有用。**
 
-我们尽可能简化了数据处理过程。对于那些对数据集不熟悉的人，我们将提供一个视频教程来告诉您如何在接下来的几周内完成。对于中文社区，我们为用户提供了中文文档。
+我们尽可能简化了数据处理过程。对于对数据集不熟悉的人，在接下来的几周，我们将提供一个视频教程来告诉您如何完成。
 
 # 🏃🏼 TODO List
 
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 <details>
 <summary>下载SMPL+H和DMPLs模型。</summary>
 
-从[SMPL+H](https://mano.is.tue.mpg.de/download.php)（选择AMASS项目中使用的Extended SMPL+H模型）下载SMPL+H模型，从[DMPL](https://smpl.is.tue.mpg.de/download.php)下载DMPL模型（选择与SMPL兼容的DMPLs）。然后将所有模型放在`./body_model/`下。`./body_model/`文件夹结构应如下：
+从[SMPL+H](https://mano.is.tue.mpg.de/download.php)（选择AMASS项目中使用的Extended SMPL+H模型）下载SMPL+H模型，从[DMPL](https://smpl.is.tue.mpg.de/download.php)下载DMPL模型（选择与SMPL兼容的DMPLs），从[SMPL-X](https://smpl-x.is.tue.mpg.de/download.php)下载SMPL-X模型。然后将所有模型放在`./body_model/`下。`./body_model/`文件夹结构应如下：
 
 ```bash
 ./body_models
@@ -195,7 +195,7 @@ cp -r ./datasets/HumanML3D/paramUtil.py ./
 
 ## 🌹 致谢
 
-我们的代码是在[TMR](https://github.com/Mathux/TMR)、[AMASS-Annotation-Unifier](https://github.com/Mathux/AMASS-Annotation-Unifier)和[HumanML3D](https://github.com/EricGuo5513/HumanML3D)的基础上修改的，感谢所有贡献者！
+我们的代码基于了[TMR](https://github.com/Mathux/TMR)、[AMASS-Annotation-Unifier](https://github.com/Mathux/AMASS-Annotation-Unifier)和[HumanML3D](https://github.com/EricGuo5513/HumanML3D)的仓库 ，感谢所有贡献者！
 
 # 🤝🏼 引用
 
@@ -229,6 +229,34 @@ cp -r ./datasets/HumanML3D/paramUtil.py ./
     month     = {June},
     year      = {2022},
     pages     = {5152-5161}
+}
+```
+
+如果您使用了数据集，你还应该引用AMASS和KIT-ML数据集。
+
+```bash
+@article{Plappert2016,
+    author = {Matthias Plappert and Christian Mandery and Tamim Asfour},
+    title = {The {KIT} Motion-Language Dataset},
+    journal = {Big Data}
+    publisher = {Mary Ann Liebert Inc},
+    year = {2016},
+    month = {dec},
+    volume = {4},
+    number = {4},
+    pages = {236--252}
+}
+```
+
+```bash
+@conference{AMASS2019,
+  title = {AMASS: Archive of Motion Capture as Surface Shapes},
+  author = {Mahmood, Naureen and Ghorbani, Nima and Troje, Nikolaus F. and Pons-Moll, Gerard and Black, Michael J.},
+  booktitle = {International Conference on Computer Vision},
+  pages = {5442--5451},
+  month = oct,
+  year = {2019},
+  month_numeric = {10}
 }
 ```
 
