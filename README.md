@@ -1,6 +1,6 @@
 ![unimocap logo.png](./resource/imgs/logo.png)
 
-[中文文档](./resource/docs/cn-README.md) ｜ [Tutorial Video (coming soon)]() 
+[中文文档](./resource/docs/cn-README.md) ｜ [Tutorial Video (coming soon)](https://www.youtube.com/channel/UC5P1ZtWm47L78t-Snn2xhhQ) 
 
 # ❓ What is UniMoCap?
 
@@ -20,7 +20,7 @@ We make the data processing as simple as possible. For those who are not familia
 - [ ] Provide a tutorial video.
 - [ ] Support more language documents.
 - [ ] Support more T-M datasets (e.g.: FLAG3D, STDM). Welcome to support your own dataset here! 
-- [ ] Support SMPL-X motion representation calculation (expected in a week).
+- [ ] Support SMPL-X motion representation calculation (expected in 1-2 week).
 - [ ] Provide trained models based on UniMoCap.
 
 # 🛠️ Installation

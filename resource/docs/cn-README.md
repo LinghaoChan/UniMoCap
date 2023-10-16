@@ -1,6 +1,6 @@
 ![./resource/imgs/logo.png](../imgs/logo.png)
 
-[English README](notion://www.notion.so/008c04d4ad4340e38ec1c68def974b29) ｜ [教程视频（即将发布）](notion://www.notion.so/008c04d4ad4340e38ec1c68def974b29)
+[English README](../../README.md) ｜ [教程视频（即将发布）](https://www.youtube.com/channel/UC5P1ZtWm47L78t-Snn2xhhQ)
 
 # ❓ 什么是UniMoCap？
 
@@ -18,7 +18,7 @@ UniMoCap是用于统一文本-动作动捕数据集的社区实现。在这个�
 - [ ]  支持`seg`和`seq`两种BABEL的标注子集。
 - [ ]  提供教程视频。
 - [ ]  支持更多语言文档。
-- [ ]  支持SMPL-X动作表示计算（预计一周内）。
+- [ ]  支持SMPL-X动作表示计算（预计1-2周内）。
 - [ ]  提供基于UniMoCap的训练模型。
 
 # 🛠️ 安装
