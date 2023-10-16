@@ -7,20 +7,20 @@
 UniMoCap is a community implementation to unify the text-motion mocap datasets. In this repository, we unify the AMASS-based text-motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
 
 - [x] body-only H3D-format (263-dim, 24 joints)
-- [x] whole-body SMPL-X-format (SMPL-X parameters). 
+- [x] whole-body SMPL-X-format (322-dim SMPL-X parameters). 
 
-***We believe this repository will be useful for training models on larger mocap text-motion data.***
+***We believe this repository will be useful for training models on larger mocap text-motion data. We will support more T-M mocap datasets in near feature. ***
 
 We make the data processing as simple as possible. For those who are not familiar with the datasets, we will provide a video tutorial to tell you how to do it in the following weeks. This is a community implementation to support text-motion datasets. For the Chinese community, we provide a Chinese document ([中文文档](./resource/docs/cn-README.md)) for users. 
 
 
 # 🏃🏼 TODO List
 
+- [ ] ***Support SMPL-X motion representation (including position, velocity, and rotations for body and hands) calculation (expected in 1-2 week).***
 - [ ] Support `seg` only and `seq` only BABEL unifier.
 - [ ] Provide a tutorial video.
 - [ ] Support more language documents.
 - [ ] Support more T-M datasets (e.g.: [FLAG3D](https://andytang15.github.io/FLAG3D), [STDM](https://druthrie.github.io/sequential-texts-to-motion)). Welcome to support your own dataset here! 
-- [ ] Support SMPL-X motion representation calculation (expected in 1-2 week).
 - [ ] Provide trained models based on UniMoCap.
 
 # 🛠️ Installation
