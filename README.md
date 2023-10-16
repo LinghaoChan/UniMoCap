@@ -233,7 +233,7 @@ As some components of UniMoCap are borrowed from [AMASS-Annotation-Unifier](http
 }
 ```
 
-If you use the dataset, you need to cite subset AMASS and KIT-ML.
+If you use the dataset, you need to cite subset KIT-ML and AMASS.
 
 ```bash
 @article{Plappert2016,

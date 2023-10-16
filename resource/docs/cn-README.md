@@ -232,7 +232,7 @@ cp -r ./datasets/HumanML3D/paramUtil.py ./
 }
 ```
 
-如果您使用了数据集，你还应该引用AMASS和KIT-ML数据集。
+如果您使用了数据集，你还应该引用KIT-ML和AMASS数据集。
 
 ```bash
 @article{Plappert2016,
