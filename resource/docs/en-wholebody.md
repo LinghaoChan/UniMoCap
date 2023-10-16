@@ -52,8 +52,8 @@ In whole-body data processing operation,
     OK! After all these processing, we will get the SMPL-X-format UniMocap dataset following the structure like: 
     
     ```bash
-    ./body-only-unimocap/UniMocap
-    ├── joints           # *.npy for each subfile
+    ./whole-body-motion/UniMocap
+    ├── smplx_322        # *.npy for each subfile
     ├── test.txt
     ├── texts            # *.txt for each subfile
     ├── train.txt

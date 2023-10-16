@@ -153,7 +153,7 @@ if __name__ == '__main__':
     else:
         os.system(f"mkdir ./{motion_type}/UniMocap")
         os.system(f"mkdir ./{motion_type}/UniMocap/texts")
-        os.system(f"mkdir ./{motion_type}/UniMocap/joints")
+        os.system(f"mkdir ./{motion_type}/UniMocap/smplx_322")
 
     save_dir = f"./{motion_type}/UniMocap"
     os.makedirs(save_dir, exist_ok=True)
@@ -205,9 +205,9 @@ if __name__ == '__main__':
                     new_id = str(count).zfill(8)
 
                     # Define copy commands for joints and texts, and execute them using subprocess.Popen
-                    c1 = f"cp {subdir}/joints/{filename} {save_dir}/joints/{new_id}.npy"
+                    c1 = f"cp {subdir}/joints/{filename} {save_dir}/smplx_322/{new_id}.npy"
                     c2 = f"cp {subdir}/texts/{filename[:-4]}.txt {save_dir}/texts/{new_id}.txt"
-                    c3 = f"cp {subdir}/joints/M{filename} {save_dir}/joints/M{new_id}.npy"
+                    c3 = f"cp {subdir}/joints/M{filename} {save_dir}/smplx_322/M{new_id}.npy"
                     c4 = f"cp {subdir}/texts/M{filename[:-4]}.txt {save_dir}/texts/M{new_id}.txt"
 
                     # Execute the copy commands using subprocess.Popen
@@ -247,9 +247,9 @@ if __name__ == '__main__':
                     new_id = str(count).zfill(8)
 
                     # Define copy commands for joints and texts, and execute them using subprocess.Popen
-                    c1 = f"cp {subdir}/joints/{filename} {save_dir}/joints/{new_id}.npy"
+                    c1 = f"cp {subdir}/joints/{filename} {save_dir}/smplx_322/{new_id}.npy"
                     c2 = f"cp {subdir}/texts/{filename[:-4]}.txt {save_dir}/texts/{new_id}.txt"
-                    c3 = f"cp {subdir}/joints/M{filename} {save_dir}/joints/M{new_id}.npy"
+                    c3 = f"cp {subdir}/joints/M{filename} {save_dir}/smplx_322/M{new_id}.npy"
                     c4 = f"cp {subdir}/texts/M{filename[:-4]}.txt {save_dir}/texts/M{new_id}.txt"
 
                     # Execute the copy commands using subprocess.Popen
@@ -289,9 +289,9 @@ if __name__ == '__main__':
                     new_id = str(count).zfill(8)
 
                     # Define copy commands for joints and texts, and execute them using subprocess.Popen
-                    c1 = f"cp {subdir}/joints/{filename} {save_dir}/joints/{new_id}.npy"
+                    c1 = f"cp {subdir}/joints/{filename} {save_dir}/smplx_322/{new_id}.npy"
                     c2 = f"cp {subdir}/texts/{filename[:-4]}.txt {save_dir}/texts/{new_id}.txt"
-                    c3 = f"cp {subdir}/joints/M{filename} {save_dir}/joints/M{new_id}.npy"
+                    c3 = f"cp {subdir}/joints/M{filename} {save_dir}/smplx_322/M{new_id}.npy"
                     c4 = f"cp {subdir}/texts/M{filename[:-4]}.txt {save_dir}/texts/M{new_id}.txt"
 
                     # Execute the copy commands using subprocess.Popen

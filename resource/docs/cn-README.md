@@ -18,6 +18,7 @@ UniMoCap是用于统一文本-动作动捕数据集的社区实现。在这个�
 - [ ]  支持`seg`和`seq`两种BABEL的标注子集。
 - [ ]  提供教程视频。
 - [ ]  支持更多语言文档。
+- [ ]  支持更多文本-动作数据集 (例如 [FLAG3D](https://andytang15.github.io/FLAG3D)、[STDM](https://druthrie.github.io/sequential-texts-to-motion))。欢迎大家贡献自己的数据集！ 
 - [ ]  支持SMPL-X动作表示计算（预计1-2周内）。
 - [ ]  提供基于UniMoCap的训练模型。
 

@@ -52,8 +52,8 @@
     OK！经过所有这些处理，我们将得到SMPL-X格式的UniMocap数据集，其结构如下：
     
     ```bash
-    ./body-only-unimocap/UniMocap
-    ├── joints           # 每个子文件的*.npy
+    ./whole-body-motion/UniMocap
+    ├── smplx_322        # 每个子文件的*.npy
     ├── test.txt
     ├── texts            # 每个子文件的*.txt
     ├── train.txt
