@@ -4,7 +4,7 @@
 
 # ❓ What is UniMoCap?
 
-UniMoCap is a community implementation to unify the text-motion mocap datasets. In this repository, we unify the AMASS-based text-motion datatsets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
+UniMoCap is a community implementation to unify the text-motion mocap datasets. In this repository, we unify the AMASS-based text-motion datasets (HumanML3D, BABEL, and KIT-ML). We support to process the AMASS data to both :
 
 - [x] body-only H3D-format (263-dim, 24 joints)
 - [x] whole-body SMPL-X-format (322-dim SMPL-X parameters). 
@@ -270,4 +270,4 @@ If you use the Motion-X dataset, please cite it accordingly.
   year={2023}
 }
 ```
-If you have any question, please contact at Ling-Hao CHEN (thu [DOT] lhchen [AT] gamil [DOT] com).
+If you have any question, please contact Ling-Hao CHEN (thu [DOT] lhchen [AT] gmail [DOT] com).

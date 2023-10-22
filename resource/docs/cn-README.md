@@ -272,4 +272,4 @@ cp -r ./datasets/HumanML3D/paramUtil.py ./
 }
 ```
 
-如果您有任何问题，请联系陈凌灏（thu [DOT] lhchen [AT] gamil [DOT] com）。
+如果您有任何问题，请联系陈凌灏（thu [DOT] lhchen [AT] gmail [DOT] com）。
