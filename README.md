@@ -200,6 +200,15 @@ We sincerely wish the community to support more text-motion mocap datasets.
 
 Our code is modified on the basis of [TMR](https://github.com/Mathux/TMR), [AMASS-Annotation-Unifier](https://github.com/Mathux/AMASS-Annotation-Unifier), and [HumanML3D](https://github.com/EricGuo5513/HumanML3D), thanks to all contributors!
 
+## Star History
+
+<p align="center">
+    <a href="https://star-history.com/#LinghaoChan/UniMoCap&Date" target="_blank">
+        <img width="500" src="https://api.star-history.com/svg?repos=LinghaoChan/UniMoCap&type=Date" alt="Star History Chart">
+    </a>
+<p>
+
+
 # 🤝🏼 Citation
 
 If you use this repository for research, you need to cite: 
