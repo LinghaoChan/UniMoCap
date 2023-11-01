@@ -68,8 +68,8 @@ if __name__ == "__main__":
         # Iterate through annotation segments
         for seg in meta_annotation:
             text = seg["text"]
-            start_frame = int(seg["start"] * 20)
-            end_frame = int(seg["end"] * 20)
+            start_frame = int(seg["start"] * fps)
+            end_frame = int(seg["end"] * fps)
 
             # Generate a unique new name for the text file
             idstr = "%06d" % counting
