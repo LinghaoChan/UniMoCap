@@ -90,7 +90,6 @@ pip install -r requirements.txt
 ├── Eyes_Japan_Dataset
 ├── GRAB
 ├── HUMAN4D
-├── humanact12
 ├── HumanEva
 ├── KIT
 ├── MPI_HDM05
@@ -109,12 +108,16 @@ pip install -r requirements.txt
 <details>
 <summary>HumanML3D数据集</summary>
 
-将[HumanML3D](https://github.com/EricGuo5513/HumanML3D)仓库克隆到`datasets/HumanML3D/`中，然后解压`texts.zip`文件。
+将[HumanML3D](https://github.com/EricGuo5513/HumanML3D)仓库克隆到`datasets/HumanML3D/`中，接着将`humanact12.zip`解压到`datasets/pose_data/`中，最后解压`texts.zip`文件。
 
 ```bash
 mkdir datasets
 cd datasets
-git clone <https://github.com/EricGuo5513/HumanML3D/tree/main>
+git clone https://github.com/EricGuo5513/HumanML3D/tree/main
+mkdir pose_data
+unzip HumanML3D/pose_data/humanact12.zip -d pose_data/
+mv pose_data/humanact12/humanact12/*.npy pose_data/humanact12/
+rm -rf pose_data/humanact12/humanact12
 cd HumanML3D/HumanML3D
 unzip texts.zip
 cd ../../..

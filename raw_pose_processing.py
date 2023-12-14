@@ -171,50 +171,47 @@ if __name__ == "__main__":
     faces = c2c(male_bm.f)
 
     female_bm = BodyModel(bm_fname=female_bm_path, num_betas=num_betas,
-                        num_dmpls=num_dmpls, dmpl_fname=female_dmpl_path).to(comp_device)
+                          num_dmpls=num_dmpls, dmpl_fname=female_dmpl_path).to(comp_device)
 
     paths = []
     folders = []
     dataset_names = []
-    for root, dirs, files in os.walk('./datasets/HumanML3D/amass_data', followlinks=True):
+    for root, dirs, files in os.walk('./datasets/amass_data', followlinks=True):
         folders.append(root)
         for name in files:
-            dataset_name = root.split('/')[2]
+            dataset_name = root.split('/')[3]
             if dataset_name not in dataset_names:
                 dataset_names.append(dataset_name)
             paths.append(os.path.join(root, name))
 
-    save_root = './datasets/HumanML3D/pose_data'
-    save_folders = [folder.replace('./datasets/HumanML3D/amass_data',
-                                './datasets/HumanML3D/pose_data') for folder in folders]
-    for folder in save_folders:
-        os.makedirs(folder, exist_ok=True)
-    group_path = [[path for path in paths if name in path]
-                for name in dataset_names]
+    group_path = [[path for path in paths if name in path] for name in dataset_names]
 
     trans_matrix = np.array([[1.0, 0.0, 0.0],
                             [0.0, 0.0, 1.0],
                             [0.0, 1.0, 0.0]])
     ex_fps = 20
-
-    group_path = group_path
     all_count = sum([len(paths) for paths in group_path])
     cur_count = 0
 
-    if not os.path.exists('./datasets/HumanML3D/pose_data'):
-        import time
-        for paths in group_path:
-            dataset_name = paths[0].split('/')[2]
-            pbar = tqdm(paths)
-            pbar.set_description('Processing: %s' % dataset_name)
-            fps = 0
-            for path in pbar:
-                save_path = path.replace('./amass_data', './pose_data')
-                save_path = save_path[:-3] + 'npy'
-                fps = amass_to_pose(path, save_path)
+    save_root = './datasets/pose_data'
+    save_folders = [folder.replace('./datasets/amass_data', './datasets/pose_data') for folder in folders]
+    for folder in save_folders:
+        os.makedirs(folder, exist_ok=True)
 
-            cur_count += len(paths)
-            print('Processed / All (fps %d): %d/%d' % (fps, cur_count, all_count))
+    for paths in group_path:
+        dataset_name = paths[0].split('/')[3]
+        pbar = tqdm(paths)
+        pbar.set_description('Processing: %s' % dataset_name)
+        fps = 0
+        for path in pbar:
+            save_path = path.replace('amass_data', 'pose_data')
+            save_path = save_path[:-3] + 'npy'
+            if os.path.exists(save_path):
+                continue
+            fps = amass_to_pose(path, save_path)
+
+        cur_count += len(paths)
+        print('Processed / All (fps %d): %d/%d' % (fps, cur_count, all_count))
 
     if datasetname == "H3D":
         index_path = './h3d_h3dformat.csv'
