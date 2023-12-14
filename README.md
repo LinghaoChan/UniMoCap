@@ -111,7 +111,7 @@ Download SMPL+H mode from [SMPL+H](https://mano.is.tue.mpg.de/download.php) (c
 <details>
 <summary>HumanML3D Dataset</summary>
     
-Clone the [HumanML3D](https://github.com/EricGuo5513/HumanML3D) repo to `datasets/HumanML3D/`, unzip the `humanact12.zip` to `datasets/pose_data`, and unzip the `texts.zip` file.
+Clone the [HumanML3D](https://github.com/EricGuo5513/HumanML3D) repo to `datasets/HumanML3D/`, unzip the `humanact12.zip` to `datasets/pose_data` and unzip the `texts.zip` file.
 
 ```bash
 mkdir datasets
@@ -120,7 +120,7 @@ git clone https://github.com/EricGuo5513/HumanML3D/tree/main
 mkdir pose_data
 unzip HumanML3D/pose_data/humanact12.zip -d pose_data/
 mv pose_data/humanact12/humanact12/*.npy pose_data/humanact12/
-rm -r pose_data/humanact12/humanact12
+rm -rf pose_data/humanact12/humanact12
 cd HumanML3D/HumanML3D
 unzip texts.zip
 cd ../../..
