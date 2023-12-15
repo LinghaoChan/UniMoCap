@@ -424,10 +424,6 @@ if __name__ == "__main__":
     datasetname = args.data
 
     count = 0
-    reference1 = np.load(
-        './datasets/HumanML3D-0/HumanML3D/new_joints/012314.npy')
-    reference2 = np.load(
-        './datasets/HumanML3D-0/HumanML3D/new_joint_vecs/012314.npy')
 
     example_id = "000021"
 
