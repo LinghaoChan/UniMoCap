@@ -131,7 +131,7 @@ cd ../../..
 <details>
 <summary>KIT-ML Dataset</summary>
     
-Download [KIT-ML](https://motion-annotation.humanoids.kit.edu/dataset/) motions, and unzip in the folder `datasets/kit-mocap/`.
+Download [KIT-ML](https://drive.google.com/file/d/14XX0PRDRtsEywpBZ87mKfV1sMbpTu_Ct/view?usp=sharing) motions, and unzip in the folder `datasets/kit-mocap/`.
 </details>  
     
 <details>
