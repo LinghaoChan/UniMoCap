@@ -128,7 +128,7 @@ cd ../../..
 <details>
 <summary>KIT-ML数据集</summary>
 
-下载[KIT-ML](https://motion-annotation.humanoids.kit.edu/dataset/)动作，并解压缩到文件夹`datasets/kit-mocap/`中。
+下载[KIT-ML](https://drive.google.com/file/d/14XX0PRDRtsEywpBZ87mKfV1sMbpTu_Ct/view?usp=sharing)动作，并解压缩到文件夹`datasets/kit-mocap/`中。
 </details>
 
 <details>
