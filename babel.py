@@ -131,7 +131,7 @@ def process_babel(amass_path: str, babel_path: str, mode: str = "all", outputs: 
                 text = sanitize(text)
 
                 element = {
-                    # to save the correspondance
+                    # to save the correspondence
                     # with the original BABEL dataset
                     "seg_id": f"{keyid}_seq_{idx}",
                     "babel_id": data["seg_id"],
@@ -155,7 +155,7 @@ def process_babel(amass_path: str, babel_path: str, mode: str = "all", outputs: 
                 end = data["end_t"]
 
                 element = {
-                    # to save the correspondance
+                    # to save the correspondence
                     # with the original BABEL dataset
                     "seg_id": f"{keyid}_seg_{idx}",
                     "babel_id": data["seg_id"],
